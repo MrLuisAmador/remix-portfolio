@@ -4,8 +4,8 @@ import {Aem, Nextjs, Wix} from '../svg'
 
 export const meta: MetaFunction = () => {
   return [
-    { title: "Luis App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Luis Amador | Web Developer" },
+    { name: "description", content: "Luis Amador website to showcase his skills and services he offers to businesses" },
   ];
 };
 
