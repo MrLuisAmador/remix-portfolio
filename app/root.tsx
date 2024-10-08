@@ -24,6 +24,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="keywords" content="Next.js,React,JavaScript,TypeScript,Tailwind CSS,Portfolio"></meta>
+        <link rel="canonical" href="https://mrluisamador.com/"></link>
         <Meta />
         <Links />
       </head>

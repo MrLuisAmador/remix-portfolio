@@ -3,9 +3,44 @@ import { Link } from "@remix-run/react";
 import {Aem, Nextjs, Wix} from '../svg'
 
 export const meta: MetaFunction = () => {
+  const page = {
+    title: "Home | Web Developer Portfolio",
+    description: "Luis Amador website to showcase his skills and services he offers to businesses",
+    canonical: "https://mrluisamador.com/",
+  }
+  
   return [
-    { title: "Luis Amador | Web Developer" },
-    { name: "description", content: "Luis Amador website to showcase his skills and services he offers to businesses" },
+    { 
+      title: page.title 
+    },
+    { 
+      name: "description", 
+      content: page.description 
+    },
+    {
+      property: "og:title",
+      content: page.title
+    },
+    {
+      property: "og:description",
+      content: page.description
+    },
+    {
+      property: "twitter:title",
+      content: page.title
+    },
+    {
+      property: "twitter:description",
+      content: page.description
+    },
+    {
+      "script:ld+json": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        name: "Luis Amador",
+        url: "https://mrluisamador.com/",
+      },
+    },
   ];
 };
 
